@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnJs</title>
+    <style>
+        body
+        {
+            background: url(waqas.avif);
+        }
+        .btnn
+        {
+            height: 70px;
+            width: 170px;
+            background-color:  #ff6666;
+            border-color:  #ff6666;
+            margin-left: 50px;
+            margin-top: 30px;
+            cursor: pointer;
+            font-size: larger;
+        }
+        .container
+        {
+            text-align: center;
+        }
+        .dept
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            
+        }
+        .btn
+        {
+            height: 70px;
+            width: 150px;
+            margin-top: 50px;
+            cursor: pointer;
+            background-color: #d8e6d8;
+            border-color: #61b65e; 
+            font-size: larger;
+            transition: all;
+        }
+        .btn:hover
+        {
+            background-color: #61b65e;
+            border-color: #7bd1b0;
+            transition-duration: 2s;
+        }
+        .sis
+        {
+            color: #61b65e;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .uol
+        {
+            color: #61b65e;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="uol">THE UNIVERSITY OF LAHORE SARGODHA</h1>
+        <h2 class="sis">Student Information System (SIS)</h2>
+        <h2 class="dept">Department Of Computer Science</h2>
+        <button class="btnn" id="btn">Roll No</button>
+        <button class="btnn" id="btn2">Name</button>
+        <button class="btnn" id="btn3">Program</button>
+        <button class="btnn" id="btn4">Semester</button>
+        <br><br><br>
+        <button type="button" class="btn">Submit</button>
+    </div>
+    
+    <script>
+        let a = document.getElementById('btn');
+        a.addEventListener('click', input);
+        function input()
+        {
+            let roll = prompt('Enter Roll No of student');
+            a.textContent = 'Your Roll No is:' +roll;
+        }
+        let b = document.getElementById('btn2');
+        b.addEventListener('click', input2);
+        function input2()
+        {
+            let name = prompt('Enter Name of student');
+            b.textContent = 'Your Name is:' +name;
+        }
+        let c = document.getElementById('btn3');
+        c.addEventListener('click', input3);
+        function input3()
+        {
+            let program = prompt('Enter Your program');
+            c.textContent = 'Your Program is:' +program;
+        }
+        let d = document.getElementById('btn4');
+        d.addEventListener('click', input4);
+        function input4()
+        {
+            let semester = prompt('Enter Your Semester');
+            d.textContent = 'Your Semester is:' +semester;
+        }
+    </script>
+</body>
+</html>
